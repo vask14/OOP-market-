@@ -59,6 +59,7 @@ Item.prototype.setItems = function(price, place, weight) {
         this.price = price;
         this.place = place;
         this.weight = weight;
+        
     }
 };
 
