@@ -1,0 +1,22 @@
+body{
+    background-image: url('https://cdn.theculturetrip.com/wp-content/uploads/2015/12/Caremal-Market.jpg');
+    background-size: cover;
+}
+
+li{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+#market{
+    background-color: bisque;
+    width: 600px;
+    height: 550px;
+    margin: auto;
+}
+#bill span{
+    width: 24.3333%;
+    text-align: left;
+    display: block;
+    float: left;
+}
