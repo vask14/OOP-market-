@@ -34,8 +34,8 @@ Item.prototype.destroy = function() {
     this.element = null;
 }
 Item.prototype.setParams = function (){
-    this.price = getParams(2,20);
-    this.weight = getParams(1,5);
+    this.price = getParams(.2,20);
+    this.weight = getParams(.1,5);
     this.bill = this.price * this.weight; 
     if(this.element) {
         this.element.innerText = this.place + ' ';
@@ -47,7 +47,7 @@ Item.prototype.setParams = function (){
         this.element2.innerText = this.weight + ' ' + 'кг';
     }
     if(this.element3) {
-        this.element3.innerText = this.bill + ' ' + '$';
+        this.element3.innerText = Math.round(this.bill*10)/10 + ' ' + '$';
     }
     function getParams(min,max) {
         return Math.floor(Math.random() * (max - min)) + min;
